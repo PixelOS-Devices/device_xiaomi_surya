@@ -178,6 +178,9 @@ PRODUCT_VENDOR_PROPERTIES += \
 PRODUCT_SYSTEM_PROPERTIES += \
     persist.device_config.runtime_native.usap_pool_enabled=true
 
+PRODUCT_VENDOR_PROPERTIES += \
+    zygote.critical_window.minute=10
+
 # Additional props
 ro.vendor.qti.cgroup_follow.enable=true \
 persist.vendor.qti.inputopts.enable=true \
