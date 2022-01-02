@@ -28,7 +28,8 @@ PRODUCT_COPY_FILES += \
 TARGET_USE_QTI_BT_STACK := false
 
 PRODUCT_PACKAGES += \
-    libbluetooth_audio_session
+    libbluetooth_audio_session \
+    libldacBT_bco
 
 # Camera
 PRODUCT_PACKAGES += \
