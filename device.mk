@@ -25,6 +25,8 @@ PRODUCT_COPY_FILES += \
     $(LOCAL_PATH)/configs/audio/mixer_paths_wcd9375.xml:$(TARGET_COPY_OUT_VENDOR)/etc/mixer_paths_wcd9375.xml
 
 # Bluetooth
+TARGET_USE_QTI_BT_STACK := false
+
 PRODUCT_PACKAGES += \
     libbluetooth_audio_session
 
