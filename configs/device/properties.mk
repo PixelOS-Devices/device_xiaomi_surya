@@ -47,6 +47,10 @@ PRODUCT_VENDOR_PROPERTIES += \
     ro.soc.model=SM7150 \
     ro.soc.manufacturer=QTI
 
+# Dalvik
+PRODUCT_VENDOR_PROPERTIES += \
+    dalvik.vm.systemuicompilerfilter=speed
+
 # Device Settings
 PRODUCT_VENDOR_PROPERTIES += \
     ro.audio.soundfx.dirac=true \
