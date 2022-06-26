@@ -11,3 +11,6 @@ persist.audio.dirac.           u:object_r:dirac_prop:s0
 
 # XiaomiParts
 persist.lcd.                   u:object_r:persist_lcd_prop:s0
+
+# FM
+ro.vendor.fm.use_audio_session		u:object_r:exported_system_prop:s0
