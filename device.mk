@@ -12,6 +12,9 @@ $(call inherit-product, $(LOCAL_PATH)/configs/device/properties.mk)
 # Inherit from the proprietary configuration
 $(call inherit-product, vendor/xiaomi/surya/surya-vendor.mk)
 
+# Installs gsi keys into ramdisk, to boot a developer GSI with verified boot.
+$(call inherit-product, $(SRC_TARGET_DIR)/product/developer_gsi_keys.mk)
+
 # ANT+
 PRODUCT_PACKAGES += \
     com.dsi.ant@1.0.vendor
@@ -92,9 +95,6 @@ BOARD_HAVE_QCOM_FM := true
 LOC_HIDL_VERSION := 4.0
 BOARD_VENDOR_QCOM_GPS_LOC_API_HARDWARE := default
 $(call inherit-product-if-exists, $(LOCAL_PATH)/gps/gps_vendor_product.mk)
-
-# GSI keys
-$(call inherit-product, $(SRC_TARGET_DIR)/product/gsi_keys.mk)
 
 # Health
 PRODUCT_PACKAGES += \
