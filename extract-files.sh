@@ -58,6 +58,9 @@ function blob_fixup() {
         vendor/bin/mi_thermald)
             sed -i "s|ug_cpu|ug_uwu|g" "${2}"
             ;;
+         vendor/lib64/camera/components/com.qti.node.watermark.so)
+            "${PATCHELF}" --add-needed "libpiex_shim.so" "${2}"
+            ;;
     esac
 }
 

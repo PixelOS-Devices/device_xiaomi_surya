@@ -51,6 +51,10 @@ PRODUCT_COPY_FILES += \
 PRODUCT_PACKAGES += \
     GCamGOPrebuilt
 
+# Camera
+PRODUCT_PACKAGES += \
+    libpiex_shim
+
 # ContextHub
 PRODUCT_PACKAGES += \
     android.hardware.contexthub@1.0-impl.generic \
