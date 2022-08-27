@@ -125,7 +125,7 @@ TARGET_POWERHAL_MODE_EXT := $(DEVICE_PATH)/power/power-mode.cpp
 TARGET_TAP_TO_WAKE_NODE  := "/proc/tp_gesture"
 
 # QC common
-OVERRIDE_QCOM_HARDWARE_VARIANT := sm8150-common
+OVERRIDE_QCOM_HARDWARE_VARIANT := sm8150
 TARGET_SEPOLICY_DIR := msmsteppe
 include $(COMMON_PATH)/BoardConfigQcom.mk
 
