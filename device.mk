@@ -15,10 +15,6 @@ $(call inherit-product, vendor/xiaomi/surya/surya-vendor.mk)
 # Installs gsi keys into ramdisk, to boot a developer GSI with verified boot.
 $(call inherit-product, $(SRC_TARGET_DIR)/product/developer_gsi_keys.mk)
 
-# ANT+
-PRODUCT_PACKAGES += \
-    com.dsi.ant@1.0.vendor
-
 # Audio
 PRODUCT_COPY_FILES += \
     $(LOCAL_PATH)/configs/audio/audio_effects.xml:$(TARGET_COPY_OUT_VENDOR)/etc/audio_effects.xml \
@@ -30,11 +26,7 @@ PRODUCT_COPY_FILES += \
 
 # Bluetooth
 PRODUCT_PACKAGES += \
-    audio.bluetooth.default \
     libbluetooth_audio_session
-
-PRODUCT_PACKAGES += \
-    android.hardware.bluetooth.audio@2.1-impl
 
 # Camera
 PRODUCT_PACKAGES += \
