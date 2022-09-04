@@ -1,0 +1,112 @@
+# Audio
+ro.vendor.audio.soundfx.type=mi
+ro.vendor.audio.soundfx.usb=true
+ro.vendor.audio.misound.bluetooth.enable=true
+persist.vendor.audio_hal.dsp_bit_width_enforce_mode=24
+persist.vendor.audio.voicecall.speaker.stereo=true
+
+# Bluetooth
+persist.vendor.bluetooth.modem_nv_support=true
+persist.vendor.qcom.bluetooth.a2dp_offload_cap=sbc-aptx-aptxtws-aptxhd-aac-ldac
+persist.vendor.qcom.bluetooth.aac_frm_ctl.enabled=true
+persist.vendor.qcom.bluetooth.aac_vbr_ctl.enabled=false
+persist.vendor.qcom.bluetooth.enable.splita2dp=true
+persist.vendor.qcom.bluetooth.scram.enabled=true
+persist.vendor.qcom.bluetooth.soc=cherokee
+persist.vendor.qcom.bluetooth.twsp_state.enabled=false
+ro.vendor.bluetooth.wipower=false
+vendor.qcom.bluetooth.soc=cherokee
+
+# Camera
+camera.disable_zsl_mode=1
+persist.vendor.camera.privapp.list=org.codeaurora.snapcam,com.android.camera
+
+# Chipset
+ro.soc.model=SM7150
+ro.soc.manufacturer=QTI
+
+# Dalvik
+dalvik.vm.systemuicompilerfilter=speed
+
+# Device Settings
+ro.audio.soundfx.dirac=true
+persist.audio.dirac.speaker=true
+persist.dirac.acs.controller=qem
+persist.dirac.acs.storeSettings=1
+persist.dirac.acs.ignore_error=1
+
+# Display
+debug.sf.latch_unsignaled=1
+persist.sys.sf.native_mode=0
+persist.sys.sf.color_mode=0
+ro.vendor.display.ad=1
+ro.vendor.display.ad.sdr_calib_data=/vendor/etc/sdr_config.cfg
+ro.vendor.display.ad.hdr_calib_data=/vendor/etc/hdr_config.cfg
+ro.vendor.display.sensortype=2
+vendor.display.disable_idle_time_hdr=1
+vendor.display.disable_idle_time_video=1
+vendor.display.disable_rotator_downscale=1
+vendor.display.qdcm.mode_combine=2
+ro.surface_flinger.has_wide_color_display=true
+ro.surface_flinger.has_HDR_display=true
+
+# DPM
+persist.vendor.dpm.feature=1
+persist.vendor.dpmhalservice.enable=1
+persist.vendor.dpm.idletimer.mode=default
+persist.vendor.dpm.nsrm.bkg.evt=3955
+drm.service.enabled=true
+
+# FRP
+ro.frp.pst=/dev/block/bootdevice/by-name/frp
+
+# HVDCP
+persist.vendor.cp.fcc_main_ua=400000
+persist.vendor.cp.taper_term_mv=6500
+persist.vendor.cp.vbus_offset_mv=1040
+
+# Incremental FS
+ro.incremental.enable=1
+
+# IWLAN
+persist.vendor.data.iwlan.enable=true
+ro.telephony.iwlan_operation_mode=legacy
+
+# Keystore
+ro.hardware.keystore_desede=true
+ro.crypto.volume.filenames_mode=aes-256-cts
+
+# Radio
+persist.vendor.radio.add_power_save=1
+persist.vendor.radio.atfwd.start=true
+persist.vendor.radio.data_con_rprt=1
+persist.vendor.radio.enableadvancedscan=true
+persist.vendor.radio.force_on_dc=true
+persist.vendor.radio.manual_nw_rej_ct=1
+persist.vendor.radio.mt_sms_ack=30
+persist.vendor.radio.process_sups_ind=1
+persist.vendor.radio.redir_party_num=1
+persist.vendor.radio.report_codec=1
+ro.telephony.default_network=22,20
+
+# Qcom
+persist.vendor.qcomsysd.enabled=1
+
+# Sensors
+persist.vendor.sensors.enable.mag_filter=true
+debug.sensors.diag_buffer_log=false
+
+# Thermal
+vendor.sys.thermal.data.path=/data/vendor/thermal/
+
+# WiFi
+wifi.aware.interface=wifi-aware0
+
+# ZRAM
+ro.zram.mark_idle_delay_mins=60
+ro.zram.first_wb_delay_mins=1440
+ro.zram.periodic_wb_delay_hours=24
+
+# Zygote
+zygote.critical_window.minute=10
+

@@ -47,8 +47,10 @@ DEVICE_MATRIX_FILE += $(COMMON_PATH)/compatibility_matrix.xml
 ODM_MANIFEST_SKUS += surya
 ODM_MANIFEST_SURYA_FILES := $(DEVICE_PATH)/configs/hidl/manifest-nfc.xml
 
-# Props
+# Properties
 TARGET_PRODUCT_PROP += $(DEVICE_PATH)/product.prop
+TARGET_SYSTEM_PROP += $(DEVICE_PATH)/system.prop
+TARGET_VENDOR_PROP += $(DEVICE_PATH)/vendor.prop
 
 # Init
 TARGET_INIT_VENDOR_LIB := //$(DEVICE_PATH):libinit_surya
