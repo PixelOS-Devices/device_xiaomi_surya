@@ -5,7 +5,6 @@
 #
 
 # Device configs makefiles
-$(call inherit-product, $(LOCAL_PATH)/configs/device/hidl_vendor.mk)
 $(call inherit-product, $(LOCAL_PATH)/configs/device/refreshrate.mk)
 
 # Inherit from the proprietary configuration
@@ -27,13 +26,18 @@ PRODUCT_COPY_FILES += \
 TARGET_USE_QTI_BT_STACK := false
 
 PRODUCT_PACKAGES += \
+    com.qualcomm.qti.bluetooth_audio@1.0.vendor \
+    vendor.qti.hardware.bluetooth_audio@2.1.vendor \
+    vendor.qti.hardware.btconfigstore@1.0.vendor \
+    vendor.qti.hardware.btconfigstore@2.0.vendor \
     libbluetooth_audio_session \
     libldacBT_bco
 
 # Camera
 PRODUCT_PACKAGES += \
     android.hardware.camera.provider@2.4-impl \
-    android.hardware.camera.provider@2.4-service_64
+    android.hardware.camera.provider@2.4-service_64 \
+    vendor.qti.hardware.camera.device@1.0.vendor
 
 PRODUCT_COPY_FILES += \
     frameworks/native/data/etc/android.hardware.camera.flash-autofocus.xml:$(TARGET_COPY_OUT_VENDOR)/etc/permissions/android.hardware.camera.flash-autofocus.xml \
@@ -71,15 +75,29 @@ PRODUCT_DEXPREOPT_SPEED_APPS += \
     SystemUI
 
 # Display
+PRODUCT_PACKAGES += \
+    android.frameworks.displayservice@1.0.vendor \
+    disable_configstore
+
 PRODUCT_COPY_FILES += \
     $(call find-copy-subdir-files,*,$(LOCAL_PATH)/configs/display/,$(TARGET_COPY_OUT_VENDOR)/etc)
 
-PRODUCT_PACKAGES += \
-    disable_configstore
-
 # DRM
 PRODUCT_PACKAGES += \
-    android.hardware.drm@1.3-service.clearkey
+    android.hardware.drm@1.3-service.clearkey \
+    android.hardware.drm@1.4.vendor
+
+# Gatekeeper
+PRODUCT_PACKAGES += \
+    android.hardware.gatekeeper@1.0.vendor
+
+# Keymaster
+PRODUCT_PACKAGES += \
+    android.hardware.keymaster@4.1.vendor
+
+# Neural Networks
+PRODUCT_PACKAGES += \
+    android.hardware.neuralnetworks@1.3.vendor
 
 # Filesystems table
 PRODUCT_COPY_FILES += \
@@ -160,6 +178,7 @@ PRODUCT_SOONG_NAMESPACES += \
 
 # NFC
 PRODUCT_PACKAGES += \
+    android.hardware.nfc@1.2.vendor \
     NfcNci \
     SecureElement \
     Tag \
