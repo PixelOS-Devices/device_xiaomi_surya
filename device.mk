@@ -4,9 +4,6 @@
 # SPDX-License-Identifier: Apache-2.0
 #
 
-# Device configs makefiles
-$(call inherit-product, $(LOCAL_PATH)/configs/device/refreshrate.mk)
-
 # Inherit from the proprietary configuration
 $(call inherit-product, vendor/xiaomi/surya/surya-vendor.mk)
 
@@ -201,6 +198,7 @@ PRODUCT_COPY_FILES += \
 
 # Overlays
 PRODUCT_PACKAGES += \
+    J20CRefreshRateListSettings \
     J20CFrameworks \
     J20CNoCutoutOverlay \
     J20CSettings \
