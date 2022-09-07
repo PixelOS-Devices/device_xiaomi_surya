@@ -87,6 +87,7 @@ void vendor_load_properties()
      */
     if (GetProperty("ro.boot.hwname", "") == "karna") { // POCO X3 (India)
         set_device_props("POCO", "karna", "M2007J20CI", "karna_in", "POCO X3");
+        property_override("bluetooth.device.default_name", "POCO X3");
     } else { // POCO X3 NFC
         string hwc = GetProperty("ro.boot.hwc", "");
         if (hwc == "THAI" || hwc == "THAI_PA") // POCO X3 NFC Thailand

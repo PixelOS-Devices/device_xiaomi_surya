@@ -6,6 +6,7 @@ persist.vendor.audio_hal.dsp_bit_width_enforce_mode=24
 persist.vendor.audio.voicecall.speaker.stereo=true
 
 # Bluetooth
+bluetooth.device.default_name=POCO X3 NFC
 persist.vendor.bluetooth.modem_nv_support=true
 persist.vendor.qcom.bluetooth.a2dp_offload_cap=sbc-aptx-aptxtws-aptxhd-aac-ldac
 persist.vendor.qcom.bluetooth.aac_frm_ctl.enabled=true
