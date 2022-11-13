@@ -211,16 +211,11 @@ PRODUCT_COPY_FILES += \
 
 # Overlays
 PRODUCT_PACKAGES += \
-    J20CRefreshRateListSettings \
     J20CFrameworks \
-    J20CNoCutoutOverlay \
     J20CSettings \
     J20CSystemUI \
     KarnaFrameworks \
-    KarnaWifiOverlay \
-    NotchBarKiller \
-    SuryaFrameworks \
-    SuryaWifiOverlay
+    SuryaFrameworks
 
 # Partitions
 PRODUCT_BUILD_SUPER_PARTITION := false
