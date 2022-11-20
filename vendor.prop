@@ -26,9 +26,6 @@ camera.disable_zsl_mode=1
 ro.soc.model=SM7150
 ro.soc.manufacturer=QTI
 
-# Dalvik
-dalvik.vm.systemuicompilerfilter=speed
-
 # Device Settings
 ro.audio.soundfx.dirac=true
 persist.audio.dirac.speaker=true

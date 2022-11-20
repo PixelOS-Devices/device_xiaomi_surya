@@ -18,6 +18,12 @@ ro.charger.enable_suspend=true
 # Device Settings
 persist.lcd.cabc_mode=1
 
+# Dalvik
+dalvik.vm.image-dex2oat-filter=speed
+dalvik.vm.image-dex2oat-threads=8
+dalvik.vm.dex2oat-filter=speed
+dalvik.vm.dex2oat-threads=8
+
 # Disable vsync for cpu rendered apps
 debug.cpurend.vsync=false
 
