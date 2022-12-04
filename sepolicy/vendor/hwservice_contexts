@@ -1,1 +1,5 @@
+# MiCharger
 vendor.xiaomi.hardware.micharge::IMiCharge                                               u:object_r:hal_micharge_hwservice:s0
+
+# Cam postproc
+vendor.xiaomi.hardware.campostproc::IMiPostProcService                                   u:object_r:hal_camerapostproc_xiaomi_hwservice:s0
