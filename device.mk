@@ -13,6 +13,9 @@ $(call inherit-product, $(SRC_TARGET_DIR)/product/developer_gsi_keys.mk)
 # Dalvik
 $(call inherit-product, frameworks/native/build/phone-xhdpi-6144-dalvik-heap.mk)
 
+# Call the MiuiCamera setup
+$(call inherit-product-if-exists, vendor/xiaomi/surya-miuicamera/products/miuicamera.mk)
+
 # Audio
 PRODUCT_COPY_FILES += \
     $(LOCAL_PATH)/configs/audio/audio_effects.xml:$(TARGET_COPY_OUT_VENDOR)/etc/audio_effects.xml \
@@ -44,10 +47,6 @@ PRODUCT_COPY_FILES += \
     frameworks/native/data/etc/android.hardware.camera.front.xml:$(TARGET_COPY_OUT_VENDOR)/etc/permissions/android.hardware.camera.front.xml \
     frameworks/native/data/etc/android.hardware.camera.full.xml:$(TARGET_COPY_OUT_VENDOR)/etc/permissions/android.hardware.camera.full.xml \
     frameworks/native/data/etc/android.hardware.camera.raw.xml:$(TARGET_COPY_OUT_VENDOR)/etc/permissions/android.hardware.camera.raw.xml
-
-# GcamGO
-PRODUCT_PACKAGES += \
-    GCamGOPrebuilt
 
 # Camera
 PRODUCT_PACKAGES += \
