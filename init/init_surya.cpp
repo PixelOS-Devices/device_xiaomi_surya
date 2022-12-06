@@ -49,6 +49,7 @@ void load_poco_karna() {
     property_override("ro.build.fingerprint", "POCO/karna_in/karna:12/SKQ1.211019.001/V13.0.1.0.SJGINXM:user/release-keys");
     property_override("ro.product.model", "M2007J20CI");
     property_override("ro.product.name", "karna_in");
+    property_override("ro.product.mod_device", "surya_in_global");
     property_override("bluetooth.device.default_name", "POCO X3");
     property_override("vendor.usb.product_string", "POCO X3");
 }
