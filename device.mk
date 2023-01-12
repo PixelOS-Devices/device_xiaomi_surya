@@ -52,6 +52,11 @@ PRODUCT_COPY_FILES += \
 PRODUCT_PACKAGES += \
     libpiex_shim
 
+# HIDL
+PRODUCT_PACKAGES += \
+    android.hidl.memory.block@1.0 \
+    android.hidl.memory.block@1.0.vendor
+
 # FM
 PRODUCT_PACKAGES += \
     FM2 \
