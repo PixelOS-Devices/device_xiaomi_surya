@@ -25,3 +25,6 @@ PRODUCT_MODEL := M2007J20CG
 PRODUCT_MANUFACTURER := Xiaomi
 
 PRODUCT_GMS_CLIENTID_BASE := android-xiaomi
+
+PRODUCT_SYSTEM_PROPERTIES += \
+    ro.product.mod_device=surya_global
